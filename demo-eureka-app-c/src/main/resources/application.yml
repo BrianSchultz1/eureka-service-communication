@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo-eureka-app-c
+
+
+server:
+  port: 8082
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      preferIpAdress: true
