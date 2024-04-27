@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 import java.time.LocalDateTime;
 
 @RestController
-public class PerfilHealthCheckController {
+public class ProfileHealthCheckController {
     @Value("${spring.application.name}")
     private String appName;
 
