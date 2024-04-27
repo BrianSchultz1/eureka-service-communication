@@ -25,8 +25,7 @@ public class AppBController {
             ResponseEntity<Integer> response = restTemplate.getForEntity(appCUrl + "/random", Integer.class);
             int randomNumberFromAppC = response.getBody();
             int randomNumberFromAppB = new Random().nextInt(100);
-            int sum = randomNumberFromAppC + randomNumberFromAppB;
-            return sum;
+            return randomNumberFromAppC + randomNumberFromAppB;
         } catch (Exception e) {
             return -1;
         }

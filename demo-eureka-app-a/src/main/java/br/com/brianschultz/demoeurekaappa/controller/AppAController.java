@@ -17,8 +17,6 @@ public class AppAController {
 
     @GetMapping("/sum")
     public String sumFromAppB() {
-
-
         try {
             RestTemplate restTemplate = new RestTemplate();
             String appBUrl = getServiceUrl();
