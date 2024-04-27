@@ -5,11 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-public class DemoEurekaAppCApplication {
+public class DNSServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoEurekaAppCApplication.class, args);
+        SpringApplication.run(DNSServerApplication.class, args);
     }
 
 }

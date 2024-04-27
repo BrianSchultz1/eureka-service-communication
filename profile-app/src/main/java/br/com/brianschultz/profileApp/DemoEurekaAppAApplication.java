@@ -1,4 +1,4 @@
-package br.com.brianschultz.demoeurekaappa;
+package br.com.brianschultz.profileApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

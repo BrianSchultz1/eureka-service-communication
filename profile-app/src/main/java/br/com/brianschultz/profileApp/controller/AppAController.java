@@ -1,4 +1,4 @@
-package br.com.brianschultz.demoeurekaappa.controller;
+package br.com.brianschultz.profileApp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
