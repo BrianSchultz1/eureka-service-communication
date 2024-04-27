@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo-eureka-server
+
+  cloud:
+    config:
+      import-check:
+        enabled: false
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    register-with-eureka: false
+    fetch-registry: false
