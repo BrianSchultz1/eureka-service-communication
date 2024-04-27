@@ -6,10 +6,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class DemoEurekaAppAApplication {
+public class PerfilApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoEurekaAppAApplication.class, args);
+//		System.setProperty("java.rmi.server.hostname","192.168.0.105:1010");
+		SpringApplication.run(PerfilApplication.class, args);
 	}
 
 }
