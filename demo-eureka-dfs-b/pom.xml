@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.brianschultz</groupId>
-	<artifactId>demo-eureka-app-a</artifactId>
+	<artifactId>demo-eureka-dfs-b</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo-eureka-app-a</name>
+	<name>demo-eureka-app-b</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>22</java.version>
+		<java.version>21</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
 	</properties>
 	<dependencies>
