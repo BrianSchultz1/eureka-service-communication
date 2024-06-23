@@ -1,0 +1,47 @@
+version: '3'
+services:
+  eureka-server:
+    image: eureka-server
+    build:
+      context: ./demo-eureka-server
+    ports:
+      - "8761:8761"
+
+  dfs-app-a:
+    image: dfs-app-a
+    build:
+      context: ./demo-eureka-dfs-a
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-server
+
+  dfs-app-b:
+    image: dfs-app-b
+    build:
+      context: ./demo-eureka-dfs-b
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-server
+
+  dfs-app-c:
+    image: dfs-app-c
+    build:
+      context: ./demo-eureka-dfs-c
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eureka-server
+
+  profile-app:
+    image: profile-app
+    build:
+      context: ./profile-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-server
+      - dfs-app-a
+      - dfs-app-b
+      - dfs-app-c
