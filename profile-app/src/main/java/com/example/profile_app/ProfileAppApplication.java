@@ -1,18 +1,17 @@
-package br.com.brianschultz.demoeurekaappa;
+package com.example.profile_app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-public class DemoEurekaAppAApplication {
+public class ProfileAppApplication {
+
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoEurekaAppAApplication.class, args);
+		SpringApplication.run(ProfileAppApplication.class, args);
 	}
 
 	@Bean

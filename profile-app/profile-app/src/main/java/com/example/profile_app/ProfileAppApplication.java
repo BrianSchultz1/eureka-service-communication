@@ -1,13 +1,13 @@
-package br.com.brianschultz.demoeurekaappb;
+package com.example.profile_app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoEurekaAppBApplication {
+public class ProfileAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoEurekaAppBApplication.class, args);
+		SpringApplication.run(ProfileAppApplication.class, args);
 	}
 
 }
