@@ -8,7 +8,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -32,11 +31,8 @@ public class ProfileService {
                 if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
                     return response.getBody();
                 }
-            } catch (HttpClientErrorException.NotFound e) {
-                // Continue to the next node if the file is not found
             } catch (Exception e) {
-                // Handle other exceptions if necessary
-                e.printStackTrace();
+                throw new RuntimeException("Failed to get file: " + e.getMessage(), e);
             }
         }
         return null;

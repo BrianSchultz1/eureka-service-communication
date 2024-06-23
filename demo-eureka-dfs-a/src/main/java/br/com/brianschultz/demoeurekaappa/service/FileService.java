@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Random;
+import java.util.logging.Logger;
 
 @Service
 public class FileService {
@@ -29,8 +30,7 @@ public class FileService {
                     return resource;
                 }
             } catch (Exception e) {
-                // Ignore exceptions to try the next node
-            }
+                throw new RuntimeException("Failed to get file: " + e.getMessage(), e);            }
         }
         return null;
     }
